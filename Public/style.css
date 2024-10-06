@@ -1,0 +1,107 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0f8ff;
+    padding: 15px 40px;
+    box-shadow: 2px 2px rgba(0, 0, 0, 0.1);
+}
+nav .logo{
+    color: rgb(1, 1, 73);
+    font-size: 22px;
+    font-weight: 700;
+}
+.menu{
+    display: flex;
+    gap: 30px;
+}
+.menu a{
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: rgb(141, 140, 140);
+    transition: all ease-in-out .55s;
+}
+.menu a:hover{
+    color: rgb(1, 1, 73);
+    border-bottom: solid 2px rgb(1, 1, 73);
+}
+.btn-sign{
+    display: flex;
+    gap: 20px;
+}
+.btn-sign .login{
+    border: solid 2px rgb(1, 1, 73);
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(1, 1, 73);
+    transition: all ease-in-out .55s;
+}
+.login:hover{
+    background-color: rgb(1, 1, 73);
+    color: #f0f8ff;
+}
+.btn-sign .signup{
+    border: none;
+    padding: 8px 20px;
+    background-color: rgb(1, 1, 73);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.signup:hover{
+    background-color: rgb(4, 4, 158);
+}
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 80px;
+}
+.left-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-area p{
+    font-size: 18px;
+    color: rgb(71, 71, 71);
+}
+.head-text{
+    width: 700px;
+    font-size: 32px;
+    color:rgb(1, 1, 73);
+    font-weight: 600;
+}
+.select-course select{
+    background: none;
+    border: 2px solid gray;
+    width: 40%;
+    padding:8px 10px;
+    border-radius: 5px;
+    /* border-bottom: 2px solid rgb(141, 140, 140); */
+}
+.select-course{
+    margin-top: 10px;
+}
+.select-course button{
+    background-color: rgb(1, 1, 73);
+    padding: 10px 20px;
+    border: none;
+    color: #f0f8ff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
