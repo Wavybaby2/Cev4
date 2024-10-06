@@ -2,10 +2,19 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.contact{
+   margin-left: 100px;
+   width: 70%;
+   margin-top: 50px;
 }
 nav{
     display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1;
     justify-content: space-between;
     align-items: center;
     background-color: #f0f8ff;
@@ -46,6 +55,20 @@ nav .logo{
     color: rgb(1, 1, 73);
     transition: all ease-in-out .55s;
 }
+a{
+    list-style-type: none;
+    text-decoration: none;
+}
+.login a{
+    text-decoration: none;
+    list-style: none;
+    color: rgb(1, 1, 73);
+    transition: all ease-in-out .55s;
+}
+.login a:hover{
+    
+    color: #f0f8ff;
+}
 .login:hover{
     background-color: rgb(1, 1, 73);
     color: #f0f8ff;
@@ -60,6 +83,12 @@ nav .logo{
     font-weight: 600;
     cursor: pointer;
 }
+.signup a{
+    color: white;
+    }
+    .signup a:hover{
+        background-color: rgb(4, 4, 158);
+    }
 .signup:hover{
     background-color: rgb(4, 4, 158);
 }
@@ -77,10 +106,11 @@ section{
 .left-area p{
     font-size: 18px;
     color: rgb(71, 71, 71);
+    width: 500px;
 }
 .head-text{
-    width: 700px;
-    font-size: 32px;
+    width: 600px;
+    font-size: 30px;
     color:rgb(1, 1, 73);
     font-weight: 600;
 }
@@ -104,4 +134,71 @@ section{
     border-radius: 5px;
     font-weight: 600;
     font-size: 16px;
+}
+.payment{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 80px;
+    align-items: center;
+}
+.pay-page h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(1, 1, 73);
+    width: 450px;
+}
+.pay-page p{
+    padding-top: 10px;
+    color: rgb(71, 71, 71);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.form-pay input{
+    display: block;
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    outline: none;
+    border: solid 2px rgb(1, 1, 73);
+    margin-top: 10px;
+}
+.form-pay label{
+    font-size: 15px;
+}
+.pay-btn{
+    background-color: rgb(1, 1, 73);
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+.about{
+    margin: 20px 80px;
+}
+.about-head{
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about-head h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(1, 1, 73);
+}
+.about-head p{
+    color: rgb(71, 71, 71);
+    font-size: 17px;
+}
+.about-text{
+    font-size: 17px;
+    color: rgb(71, 71, 71);
+    line-height: 30px;
+}
+.images{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.images img{
+    width: 170px;
 }

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    <!--Navbar-->
+    <nav>
+        <h1 class="logo">CEVS ENTERPRENUER</h1>
+        <div class="menu">
+            <a href="index.html">Home</a>
+            <a href="#payment">Payment</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </div>
+        <div class="btn-sign">
+            <button class="login"><a href="login.html">Login</a></button>
+            <button class="signup"><a href="register.html">Signup</a></button>
+        </div>
+    </nav>
+
+
+
+<!--sign up page-->
+  <div class="auth-content">
+    <form action="register.html" method="post">
+        <h2 class="form-title">Register</h2>
+      
+        <div>
+            
+        </div>
+        <div>
+            <label>Username</label>
+            <input type="text" class="text-input" name="Username" minlength="5" required>
+            <p>required</p>
+            <label>Email</label>
+            <input type="email" class="text-input" placeholder="Your email" name="username" required>
+            <p>required</p>
+        </div>
+        <div>
+            <label>Password</label>
+            <input type="password" class="text-input" placeholder="Your password" name="Password" minlength="6" required>
+            <p>required</p>
+        <label>Confirm Password</label>
+        <input type="password" class="text-input" placeholder="Your password" name="PasswordConf" minlength="6" required>
+        <p>Password must be atleast 6 characters</p>
+        
+            <button type="submit" class="btn btn-big" style="margin-top: 10px;"><a href="ex.html">Register</a></button>
+        
+    </div>
+        
+    <p>Or <a href="login.html">Sign In</a></p>
+    </div>
+   
+    </form>
+  </div>
+
+</body>
+</html>

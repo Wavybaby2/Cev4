@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="example.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <label class="logo"><img class="logo-img" src="images/download (2) - Copy.jpg" alt="" class="image">CEVS <span>ENTERPRENUER</span></label>
+        <ul>
+            <li><a class="active" href="#Home">Home</a></li>
+            <li><a href="#payment">Payment</a></li>
+            <li><a href="/">About</a></li>
+            <li><a href="/">Contact</a></li>
+            <li><div class="btn-sign">
+                <button class="login"><a href="login-page/login.html">Login</a></button>
+                <button class="signup"><a href="login-page/register.html">Signup</a></button>
+            </div>
+        </li>
+        </ul>
+       </nav> 
+
+
+       <section id="Home">
+        <div class="left-area">
+            <h3 class="head-text">Start learning a skills at Oduduwa University Ipetumodu,Join us today!</h3>
+            <p class="">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora sed pariatur libero quam a, in fugiat magni quos non ad ratione perferendis iusto dicta vel corrupti voluptate nam vitae rerum.
+            Sint
+            </p>
+            <div class="select-course">
+                <select name="courses" id="">
+                    <option value="" selected>Select a program</option>
+                    <option value="">Web-development</option>
+                    <option value="">Barbing</option>
+                    <option value="">Tailoring</option>
+                    <option value="">Graphics design</option>
+                    <option value="">Shoe-Making</option>
+                    <option value="">Catering</option>
+                    <option value="">Machanics</option>
+                    <option value="">Driving</option>
+                </select>
+                <button>Join now</button>
+            </div>
+        </div>
+        <img src="body-image.jpg" alt="">
+    </section>
+    <div class="payment" id="payment">
+        <img src="Payment.png">
+        <div class="pay-page">
+            <h3>Make payment for your Enterprenuer Program</h3>
+            <p>Make payment to participate in the ongoing enterprenuer program</p>
+            <form action="" class="form-pay">
+                <label for="name">Fullname</label>
+                <input type="text" name="name" id="name" required placeholder="Bolaji">
+                
+                <label for="card">Card Name</label>
+                <input type="text" name="name" id="card" required placeholder="Benji Bolaji">
+
+                <label for="number">Card Number</label>
+                <input type="email" name="name" id="number" required minlength="15" placeholder="2222 3333 5555 4444">
+
+                <input type="button" value="Pay Now" class="pay-btn">
+            </form>
+        </div>
+    </div>
+    <div class="about">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: system-ui;
+}
+nav{
+    background: navy;
+    height: 80px;
+    width: 100%;
+}
+label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0px 100px;
+    font-weight: bold;
+}
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+nav ul li a{
+    color: white;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+#check{
+    display: none;
+}
+
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+.btn-sign{
+    gap: 20px;
+}
+.btn-sign .login{
+    border: solid 2px rgb(1, 1, 73);
+    padding: 8px 20px;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    color: rgb(1, 1, 73);
+    transition: all ease-in-out .55s;
+}
+.login:hover{
+    background-color: rgb(1, 1, 73);
+    color: #f0f8ff;
+}
+.btn-sign .signup{
+    border: none;
+    padding: 8px 20px;
+    background-color: rgb(1, 1, 73);
+    color: white;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.signup:hover{
+    background-color: rgb(4, 4, 158);
+}
+
+@media (max-width: 858px){
+   .checkbtn{
+    display: block;
+   }
+   ul{
+    position: fixed;
+    width: 30%;
+    height: 100vh;
+    background: #2c3e50;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+   }
+   nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+   }
+   nav ul li a{
+    font-size: 20px;
+   }
+   a:hover,a.active{
+    background: none;
+    color: navy;
+   }
+   #check:checked ~ ul{
+    left: 0;
+   }
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px 80px;
+}
+.left-area{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.left-area p{
+    font-size: 18px;
+    color: rgb(71, 71, 71);
+}
+.head-text{
+    width: 700px;
+    font-size: 32px;
+    color:rgb(1, 1, 73);
+    font-weight: 600;
+}
+.select-course select{
+    background: none;
+    border: 2px solid gray;
+    width: 40%;
+    padding:8px 10px;
+    border-radius: 5px;
+    /* border-bottom: 2px solid rgb(141, 140, 140); */
+}
+.select-course{
+    margin-top: 10px;
+}
+.select-course button{
+    background-color: rgb(1, 1, 73);
+    padding: 10px 20px;
+    border: none;
+    color: #f0f8ff;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    font-size: 16px;
+}
+.payment{
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 80px;
+    align-items: center;
+}
+.pay-page h3{
+    font-size: 28px;
+    font-weight: 600;
+    color: rgb(1, 1, 73);
+    width: 450px;
+}
+.pay-page p{
+    padding-top: 10px;
+    color: rgb(71, 71, 71);
+    font-size: 17px;
+    margin-bottom: 20px;
+}
+.form-pay input{
+    display: block;
+    width: 80%;
+    padding: 10px 10px;
+    font-size: 16px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+    outline: none;
+    border: solid 2px rgb(1, 1, 73);
+    margin-top: 10px;
+}
+.form-pay label{
+    font-size: 15px;
+}
+.pay-btn{
+    background-color: rgb(1, 1, 73);
+    font-size: 17px;
+    color: white;
+    cursor: pointer;
+}
+
+.autoShow{
+    animation: autoShowAnimation both;
+    animation-timeline: view(70% 5%);
+}
+@keyframes autoShowAnimation{
+    from{
+        opacity: 0;
+        transform: translateY(200px) scale(0.3);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+.autoBlur{
+    animation: autoBlurAnimation linear both;
+    animation-timeline: view(50%);
+}
+
+@keyframes autoBlurAnimation{
+    0%{
+        filter: blur(40px);
+    }
+    45%, 55%{
+        filter: blur(0px);
+    }
+    100%{
+        filter: blur(40px);
+    }
+}
