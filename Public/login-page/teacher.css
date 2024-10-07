@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana;
+}
+
+ li{
+            list-style: none;
+        }
+        h1,
+        h2{
+            color: rgb(28, 28, 28);
+        }
+        h3{
+            color: rgb(104, 103, 103);
+        }
+        .btn{
+            background: #f05462;
+            color: white;
+            padding: 5px 10px;
+            align-items: center;
+        }
+        .btn:hover{
+            color: #f05462;
+            background: white;
+            padding: 3px 8px;
+            border: 2px solid #f05462;
+        }
+        .side-menu{
+            position: fixed;
+            background-color: #f05462;
+            width: 20vw;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .side-menu .brand-name{
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        a{
+            text-decoration: none;
+            list-style: none;
+        }
+        .side-menu li a{
+            font-size: 24px;
+            padding: 10px 40px;
+            color: white;
+            display: flex;
+            line-height: 3;
+            align-items: center;
+        }
+        .side-menu li a:hover{
+            background: white;
+            border-radius: 50%;
+            color: #f05462;
+            cursor: pointer;
+        }
+        .container{
+            position: absolute;
+            right: 0;
+            width: 80vw;
+            height: 100vh;
+            
+        }
+
+        .container .header{
+            position: fixed;
+            top: 0;
+            right: 0;
+            width: 80vw;
+            height: 10vh;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+        }
+        .container .header .nav{
+            width: 90%;
+            display: flex;
+            align-items: center;
+        }
+        .container .header .nav .search{
+            flex: 3;
+           display: flex;
+           justify-content: center;
+        }
+        .container .header .nav .search input[type=text]{
+            border: none;
+            background: white;
+            padding: 10px;
+            width: 50%;
+        }
+
+        .container .header .nav .search button{
+            width: 40px;
+            height: 40px;
+            border: none;
+        }
+        .container .header .nav .user{
+            flex: 1;
+           
+        }
+      
+
+         .container .header .nav .user .img-case i{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100;
+         }
+
+
+
+
+table{
+    width: 80%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+   
+}
+    table thead{
+        width: 100%;
+        padding: 0px;
+       
+    }
+    table thead th{
+        border-bottom: 1px solid black;
+        line-height: 3;
+    }
+    table tbody{
+        width: 100%;
+        padding: 0px;
+        margin: 0px;
+    }
+    table tbody tr{
+        line-height: 2.5;
+    }
+
+
+

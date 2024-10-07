@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="student.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div class="side-menu">
+        <div class="brand-name">
+            <h1>CEVS</h1>
+        </div>
+        <ul>
+            <li><a href="ex.html"><i class="fa-solid fa-table-columns"></i> Dashboard</a></li>
+            <li><a href=""><i class="fa-solid fa-users-line"></i> Students</a></li>
+            <li><a href="teachers.html"><i class="fa-solid fa-chalkboard-user"></i> Teachers</a></li>
+            <li><a href=""><i class="fa-solid fa-handshake-angle"></i> Help</a></li>
+            <li><a href="index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+    <div class="header">
+            <div class="nav">
+                <div class="search">
+                    <input type="text" placeholder="Search..">
+                    <button type="submit"><i class="fa fa-search"></i></button>
+                </div>
+                <div class="user">
+                    <a href="#" class="btn">Add New</a>
+                    <i class="fa fa-bell"></i>
+                    <div class="img-case">
+                        <i class="fa fa-user"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content">
+            <h1 id="heading">Welcome &nbsp;</h1>
+            <img src="images/profile1.png" id="profile-pic">
+            <label for="input-file">Update image</label>
+            <input type="file" accept="image/jpeg, image/png, image/jpg" id="input-file">
+        <p id="result"></p>
+        <div class="btn-sign">
+        <button class="btn-big" onclick="resetProfile()">Reset Profile</button>
+        <button class="btn-big"><a href="createprofile.html">Create Profile</a></button>
+    </div>
+        </div>
+
+        
+    </div>
+
+
+
+
+
+   
+
+   <script src="student.js"></script>
+</body>
+</html>
