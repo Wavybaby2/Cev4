@@ -202,3 +202,22 @@ section{
 .images img{
     width: 170px;
 }
+
+.socials{
+    width: 100%;
+    margin-top: 20px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.socials h1{
+    justify-content: center;
+    display: block;
+    align-items: center;
+    text-align: center;
+}
+.socials a{
+    justify-content: center;
+    display: block;
+    text-align: center;
+    padding: 10px 0px;
+}
